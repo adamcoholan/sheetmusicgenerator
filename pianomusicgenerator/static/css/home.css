@@ -4,10 +4,11 @@ body {
 }
 
 .square {
-    height: 450px;
+    height: 40%;
     width: 30%;
     margin-left: 35%;
     margin-top: 120px;
+    margin-bottom: 100px;
     border-radius: 5%;
     background-color: #748F97;
 }

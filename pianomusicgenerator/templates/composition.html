@@ -1,20 +1,22 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel='stylesheet' href='composition.css'>
+    <link rel='stylesheet' type="text/css" href="{% static './css/composition.css' %}">
 </head>
 <body>
     <div>
         <div class='title'>
             <p class='header'>Composer</p>
-            <p class='sub-header'> Project #1: Fur Elise</p>
+            <p class='sub-header'> Project #1: {{ name }}</p>
         </div>
         <div class="embed-container">
             <iframe style="border-radius: 10px;" src="https://flat.io/embed/618d737faa9c2f0012b81628?appId=61842bd2fa5c8d0012d684f0&sharingKey=40da7c40baa6f0f5545f1dab09c00f193f0825bc5bbe9b5eb5d78a11f568b3b49fedbf85093fd5a74cbee6dbd2c0e156cff504c147998a71e666bfb598558ed8" height="450" width="100%" frameBorder="0" allowfullscreen allow="midi"></iframe>
         </div> 
         <div>
-            <a href="/sheet-music-generator-fe/recording.html" class="record-btn" type="button">Start Another Session</a>
+            <a href="/pianomusicgenerator/" class="record-btn" type="button">Start Another Session</a>
         </div>
     </div>
 </body>
